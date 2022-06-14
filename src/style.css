@@ -1,3 +1,333 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Rubik";
+  src: url("src/fonts/Rubik-Regular.woff2") format("woff2"),
+    url("src/fonts/Rubik-Regular.woff") format("woff"),
+    url("src/fonts/Rubik-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("src/fonts/Rubik-Medium.woff2") format("woff2"),
+    url("src/fonts/Rubik-Medium.woff") format("woff"),
+    url("src/fonts/Rubik-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@layer base {
+  h1 {
+    @apply font-sans
+    font-medium
+    text-4xl
+    text-gray-900;
+  }
+
+  h2 {
+    @apply font-sans
+    font-medium
+    text-2xl
+    text-gray-900;
+  }
+
+  h3 {
+    @apply font-sans
+    font-medium
+    text-base
+    text-gray-900;
+  }
+
+  svg {
+    @apply fill-gray-500
+    hover:fill-blue-400
+    transition;
+  }
+}
+
+@layer components {
+  .text-1 {
+    @apply font-sans
+    font-normal
+    text-xl
+    text-gray-900;
+  }
+
+  .text-2 {
+    @apply font-sans
+    font-normal
+    text-base
+    text-gray-900;
+  }
+
+  .text-3 {
+    @apply font-sans
+    font-normal
+    text-sm
+    text-gray-900;
+  }
+
+  .text-4 {
+    @apply font-sans
+    font-normal
+    text-xs
+    text-gray-900;
+  }
+
+  .text-5 {
+    @apply font-sans
+    font-normal
+    text-2xl
+    text-gray-900;
+  }
+
+  .text-small {
+    @apply font-sans
+    font-normal
+    text-tiny
+    text-gray-900;
+  }
+
+  .btn-primary {
+    @apply block
+    bg-blue-400
+    rounded-md
+    text-base
+    text-white
+    hover:bg-blue-700
+    transition
+    disabled:bg-gray-200
+    disabled:text-gray-500;
+  }
+
+  .btn-secondary {
+    @apply block
+    bg-transparent
+    rounded-md
+    border
+    border-solid
+    border-blue-400
+    text-base
+    text-gray-900
+    hover:bg-blue-700
+    hover:text-white
+    hover:border-transparent
+    transition
+    disabled:border-gray-200
+    disabled:text-gray-400;
+  }
+
+  .btn-add {
+    @apply block
+    bg-gray-500
+    rounded-md
+    text-xs
+    text-white
+    hover:bg-blue-700
+    hover:text-white
+    transition
+    disabled:bg-gray-200
+    disabled:text-gray-500;
+  }
+
+  .link-1 {
+    @apply font-sans
+    font-normal
+    text-xl
+    text-blue-400
+    border-b
+    border-dashed
+    border-blue-400
+    hover:text-blue-700
+    hover:border-solid
+    transition
+    disabled:text-gray-400
+    disabled:border-none;
+  }
+
+  .link-2 {
+    @apply font-sans
+    font-normal
+    text-xs
+    text-gray-400
+    border-b
+    border-dashed
+    border-gray-400
+    hover:text-blue-700
+    hover:border-solid
+    hover:border-blue-700
+    transition
+    disabled:text-gray-400
+    disabled:border-none;
+  }
+
+  .link-3 {
+    @apply font-sans
+    font-normal
+    text-sm
+    text-gray-900
+    border-b
+    border-dashed
+    border-gray-500
+    hover:text-blue-700
+    hover:border-solid
+    hover:border-blue-700
+    transition
+    disabled:text-gray-400
+    disabled:border-none;
+  }
+
+  .link-4 {
+    @apply font-sans
+    font-normal
+    text-sm
+    text-gray-500
+    border-b
+    border-dashed
+    border-gray-500
+    hover:text-blue-700
+    hover:border-solid
+    hover:border-blue-700
+    transition
+    disabled:text-gray-400
+    disabled:border-none;
+  }
+
+  .label {
+    @apply font-sans
+    font-normal
+    text-sm
+    text-gray-500;
+  }
+
+  .label-star {
+    @apply after:content-['*']
+    after:text-red-800
+    after:ml-1;
+  }
+
+  .field {
+    @apply w-full
+    h-13
+    mt-2.5
+    rounded-md
+    bg-gray-100
+    border
+    border-solid
+    border-transparent
+    pl-5
+    pr-5
+    font-sans
+    font-normal
+    text-base
+    text-gray-900
+    disabled:text-gray-400
+    hover:border-blue-400
+    transition
+    focus:outline-none
+    focus:border-blue-400
+    [&:not(:focus):not(:placeholder-shown)]:invalid:border-red-800;
+  }
+
+  .message-invalid {
+    @apply font-sans
+    font-normal
+    text-xs
+    text-red-800
+    invisible;
+  }
+
+  .field-password {
+    @apply [&:not(:focus):not(:placeholder-shown)]:valid:border-green-600
+    pr-12;
+  }
+
+  .btn-password {
+    @apply h-13
+    w-12
+    pl-2
+    absolute
+    bottom-0
+    right-0
+    z-10;
+  }
+
+  .field-search {
+    @apply placeholder:text-sm
+    placeholder:text-gray-500
+    text-sm
+    pl-12
+    bg-[url('src/img/icons/search.svg')]
+    bg-no-repeat
+    bg-left-5.5;
+  }
+
+  .status {
+    @apply h-6
+    rounded
+    font-sans
+    font-medium
+    text-xs
+    pl-2.5
+    pr-2.5
+    hover:text-white
+    transition;
+  }
+
+  .status-green {
+    @apply bg-green-100
+    text-green-500
+    hover:bg-green-500;
+  }
+
+  .status-red {
+    @apply bg-red-100
+    text-red-500
+    hover:bg-red-500;
+  }
+
+  .status-orange {
+    @apply bg-orange-100
+    text-orange-500
+    hover:bg-orange-500;
+  }
+
+  .status-purple {
+    @apply bg-purple-100
+    text-purple-500
+    hover:bg-purple-500;
+  }
+
+  .status-green {
+    @apply bg-green-100
+    text-green-500
+    hover:bg-green-500;
+  }
+
+  .status-blue {
+    @apply bg-blue-100
+    text-blue-500
+    hover:bg-blue-500
+    rounded-full;
+  }
+
+  .status-pink {
+    @apply bg-pink-100
+    text-pink-500
+    hover:bg-pink-500
+    rounded-full;
+  }
+
+  .status-aqua {
+    @apply bg-aqua-100
+    text-aqua-500
+    hover:bg-aqua-500
+    rounded-full;
+  }
+}

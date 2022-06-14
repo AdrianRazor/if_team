@@ -5,10 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../compiled.css" />
   </head>
-  <body>
-    <h1 class="text-7xl text-blue-600">Heading</h1>
-    <h2 class="font-bold text-red-400">subheading</h2>
+  <body class="p-8">
+    <div class="mr-8">
+      <h1 class="mb-4">Heading 1</h1>
+      <h2 class="mb-4">Heading 2</h2>
+      <h3 class="mb-4">Heading 3</h3>
+      <p class="text-1 mb-4">Text 1</p>
+      <p class="text-2 mb-4">Text 2</p>
+      <p class="text-3 mb-4">Text 3</p>
+      <p class="text-4 mb-4">Text 4</p>
+      <p class="text-5 mb-4">Text 5</p>
+      <p class="text-small mb-4">Text-Small</p>
+    </div>
+    <div class="mr-8">
+      <button class="btn-primary w-105 h-15 mb-4">Next</button>
+      <button class="btn-secondary w-105 h-13 mb-4">Next</button>
+      <button class="btn-add w-32 h-8 mb-4">+ Add Iteration</button>
+    </div>
+    <div class="mb-8">
+      <a href="#" class="link-1 mr-8">Зарегистрируйтесь</a>
+      <a href="#" class="link-2 mr-8">Забыли пароль?</a>
+      <a href="#" class="link-3 mr-8">17 march</a>
+      <a href="#" class="link-4 mr-8">Graphic bar</a>
+    </div>
+    <div class="w-105">
+      <div class="mb-4">
+        <div class="flex justify-between">
+          <label for="email" class="label label-star">E-mail</label>
+          <span class="message-invalid">Неверный формат</span>
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="field"
+          placeholder=" "
+          required
+        />
+      </div>
+      <div class="relative mb-4">
+        <label for="password" class="label">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="field field-password"
+          placeholder=" "
+          required
+        />
+        <button class="btn-password">
+          <svg width="20" height="16">
+            <use xlink:href="img/sprite.svg#password-show"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mb-4">
+        <input type="search" class="field field-search" placeholder="Search" />
+      </div>
+    </div>
+    <div>
+      <button class="status status-green">In Progress</button>
+      <button class="status status-red">Finished</button>
+      <button class="status status-orange">On Approval</button>
+      <button class="status status-purple">Tech. Support</button>
+    </div>
+    <div>
+      <button class="status status-blue">FP</button>
+      <button class="status status-pink">TM</button>
+      <button class="status status-aqua">SUB</button>
+    </div>
   </body>
 </html>
