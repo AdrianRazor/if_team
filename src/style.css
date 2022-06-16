@@ -223,6 +223,50 @@
     transition;
   }
 
+  .btn-view-wrapper {
+    @apply w-fit
+    flex
+    justify-center
+    items-center
+    border
+    border-solid
+    border-gray-500
+    rounded-lg;
+  }
+
+  .btn-view {
+    @apply w-[180px]
+    h-13
+    flex
+    justify-center
+    items-center
+    gap-x-3.5
+    font-sans
+    font-normal
+    text-sm
+    text-gray-500
+    outline-1
+    outline
+    outline-transparent
+    rounded-md
+    transition
+    hover:text-blue-400;
+  }
+
+  .btn-view:hover svg {
+    @apply fill-blue-400;
+  }
+
+  .btn-view.active svg {
+    @apply fill-white;
+  }
+
+  .btn-view.active {
+    @apply bg-blue-400
+    text-white
+    outline-blue-400;
+  }
+
   .link-1 {
     @apply font-sans
     font-normal
