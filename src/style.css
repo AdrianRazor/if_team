@@ -120,7 +120,8 @@
     hover:border-transparent
     transition
     disabled:border-gray-200
-    disabled:text-gray-400;
+    disabled:text-gray-400
+    disabled:hover:bg-transparent;
   }
 
   .btn-add {
@@ -134,6 +135,41 @@
     transition
     disabled:bg-gray-200
     disabled:text-gray-500;
+  }
+
+  .btn-plus {
+    @apply relative
+    w-5
+    h-5
+    bg-gray-100
+    rounded-full
+
+    before:content-['']
+    before:block
+    before:w-2
+    before:h-0.5
+    before:bg-gray-900
+    before:absolute
+    before:top-[9px]
+    before:left-1.5
+    
+    after:content-['']
+    after:block
+    after:w-0.5
+    after:h-2
+    after:bg-gray-900
+    after:absolute
+    after:top-1.5
+    after:left-[9px]
+    
+    hover:bg-blue-700
+    hover:before:bg-white
+    hover:after:bg-white
+    transition
+    
+    disabled:bg-gray-200
+    disabled:before:bg-gray-500
+    disabled:after:bg-gray-500;
   }
 
   .link-1 {
@@ -240,7 +276,7 @@
     font-normal
     text-xs
     text-red-800
-    invisible;
+    visible;
   }
 
   .field-password {
