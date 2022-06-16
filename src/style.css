@@ -172,6 +172,33 @@
     disabled:after:bg-gray-500;
   }
 
+  .btn-plus-dropdown {
+    @apply max-w-[227px]
+    w-full
+    rounded-md
+    bg-white
+    shadow-dropdown;
+  }
+
+  .btn-plus-dropdown li {
+    @apply py-2
+    px-2.5;
+  }
+
+  .btn-plus-dropdown a {
+    @apply block
+    rounded-md
+    font-sans
+    font-normal
+    text-xs
+    text-black
+    py-2
+    px-4
+    hover:text-blue-400
+    hover:bg-gray-100
+    transition;
+  }
+
   .link-1 {
     @apply font-sans
     font-normal

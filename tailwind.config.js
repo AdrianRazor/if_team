@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     colors: {
       white: "#FFFFFF",
+      black: "#000000",
       transparent: "transparent",
       blue: {
         100: "#E7ECFD",
@@ -110,6 +111,9 @@ module.exports = {
       },
       backgroundPosition: {
         "left-5.5": "1.375rem",
+      },
+      boxShadow: {
+        dropdown: "0px 4px 20px rgba(165, 170, 189, 0.3)",
       },
     },
   },
