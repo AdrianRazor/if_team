@@ -124,7 +124,7 @@
     disabled:hover:bg-transparent;
   }
 
-  .btn-add {
+  .btn-add-1 {
     @apply block
     bg-gray-500
     rounded-md
@@ -135,6 +135,30 @@
     transition
     disabled:bg-gray-200
     disabled:text-gray-500;
+  }
+
+  .btn-add-2 {
+    @apply block
+    bg-blue-400
+    rounded-l-md
+    text-base
+    text-white
+    hover:bg-blue-700
+    transition;
+  }
+
+  .btn-arrow {
+    @apply flex
+    justify-center
+    items-center
+    bg-blue-400
+    rounded-r-md
+    hover:bg-blue-700
+    transition;
+  }
+
+  .btn-arrow svg {
+    @apply fill-white;
   }
 
   .btn-plus {

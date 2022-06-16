@@ -99,15 +99,14 @@ module.exports = {
     },
 
     extend: {
-      fontSize: {
-        tiny: "0.625rem",
-      },
-      width: {
-        105: "26.25rem",
-      },
-      height: {
+      spacing: {
         13: "3.125rem",
         15: "3.75rem",
+        105: "26.25rem",
+      },
+
+      fontSize: {
+        tiny: "0.625rem",
       },
       backgroundPosition: {
         "left-5.5": "1.375rem",
