@@ -56,7 +56,8 @@
     @apply font-sans
     font-normal
     text-xl
-    text-gray-900;
+    text-gray-900
+    mobile:text-lg;
   }
 
   .text-2 {
@@ -98,6 +99,8 @@
     @apply block
     bg-blue-400
     rounded-md
+    font-sans
+    font-medium
     text-base
     text-white
     hover:bg-blue-700
@@ -107,13 +110,50 @@
   }
 
   .btn-secondary {
+    @apply flex
+    justify-center
+    items-center
+
+    bg-transparent
+    rounded-md
+    border
+    border-solid
+    border-blue-400
+
+    font-sans
+    font-medium
+    text-base
+    text-gray-900
+
+    hover:bg-blue-700
+    hover:text-white
+    hover:border-transparent
+    transition
+    disabled:border-gray-200
+    disabled:text-gray-400
+    disabled:hover:bg-transparent;
+  }
+
+  .btn-secondary svg {
+    @apply fill-blue-400
+    transition
+    mr-2;
+  }
+
+  .btn-secondary:hover svg {
+    @apply fill-white;
+  }
+
+  .btn-secondary-2 {
     @apply block
     bg-transparent
     rounded-md
     border
     border-solid
     border-blue-400
-    text-base
+    font-sans
+    font-medium
+    text-xs
     text-gray-900
     hover:bg-blue-700
     hover:text-white
@@ -128,6 +168,8 @@
     @apply block
     bg-gray-500
     rounded-md
+    font-sans
+    font-medium
     text-xs
     text-white
     hover:bg-blue-700
@@ -141,6 +183,8 @@
     @apply block
     bg-blue-400
     rounded-l-md
+    font-sans
+    font-medium
     text-base
     text-white
     hover:bg-blue-700
@@ -254,7 +298,8 @@
   }
 
   .btn-view:hover svg {
-    @apply fill-blue-400;
+    @apply fill-blue-400
+    transition;
   }
 
   .btn-view.active svg {
@@ -268,7 +313,8 @@
   }
 
   .link-1 {
-    @apply font-sans
+    @apply h-fit
+    font-sans
     font-normal
     text-xl
     text-blue-400
@@ -279,11 +325,13 @@
     hover:border-solid
     transition
     disabled:text-gray-400
-    disabled:border-none;
+    disabled:border-none
+    mobile:text-lg;
   }
 
   .link-2 {
-    @apply font-sans
+    @apply h-fit
+    font-sans
     font-normal
     text-xs
     text-gray-400
@@ -299,7 +347,8 @@
   }
 
   .link-3 {
-    @apply font-sans
+    @apply h-fit
+    font-sans
     font-normal
     text-sm
     text-gray-900
@@ -315,7 +364,8 @@
   }
 
   .link-4 {
-    @apply font-sans
+    @apply h-fit
+    font-sans
     font-normal
     text-sm
     text-gray-500
@@ -389,6 +439,10 @@
     z-10;
   }
 
+  .btn-password:hover svg {
+    @apply fill-blue-400;
+  }
+
   .field-search {
     @apply placeholder:text-sm
     placeholder:text-gray-500
@@ -460,5 +514,15 @@
     text-aqua-500
     hover:bg-aqua-500
     rounded-full;
+  }
+
+  .header {
+    @apply w-full
+    py-[30px]
+    px-10
+    border-b-2
+    border-solid
+    border-gray-100    
+    mobile:px-[15px];
   }
 }

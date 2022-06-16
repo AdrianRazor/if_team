@@ -560,6 +560,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(48 48 57 / var(--tw-text-opacity));
 }
+@media (max-width: 767px) {
+
+  .text-1 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
 .text-2 {
   font-family: Rubik, Arial, sans-serif;
   font-size: 1rem;
@@ -604,8 +611,10 @@ video {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(41 86 239 / var(--tw-bg-opacity));
+  font-family: Rubik, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -625,15 +634,19 @@ video {
   color: rgb(119 128 156 / var(--tw-text-opacity));
 }
 .btn-secondary {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.375rem;
   border-width: 1px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(41 86 239 / var(--tw-border-opacity));
   background-color: transparent;
+  font-family: Rubik, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(48 48 57 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -658,13 +671,63 @@ video {
 .btn-secondary:hover:disabled {
   background-color: transparent;
 }
+.btn-secondary svg {
+  margin-right: 0.5rem;
+  fill: #2956EF;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.btn-secondary:hover svg {
+  fill: #FFFFFF;
+}
+.btn-secondary-2 {
+  display: block;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(41 86 239 / var(--tw-border-opacity));
+  background-color: transparent;
+  font-family: Rubik, Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(48 48 57 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.btn-secondary-2:hover {
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 42 147 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.btn-secondary-2:disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 227 233 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(172 178 195 / var(--tw-text-opacity));
+}
+.btn-secondary-2:hover:disabled {
+  background-color: transparent;
+}
 .btn-add-1 {
   display: block;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(119 128 156 / var(--tw-bg-opacity));
+  font-family: Rubik, Arial, sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -691,8 +754,10 @@ video {
   border-bottom-left-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(41 86 239 / var(--tw-bg-opacity));
+  font-family: Rubik, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -875,6 +940,11 @@ video {
 }
 .btn-view:hover svg {
   fill: #2956EF;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 .btn-view.active svg {
   fill: #FFFFFF;
@@ -887,6 +957,9 @@ video {
   outline-color: #2956EF;
 }
 .link-1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-bottom-width: 1px;
   border-style: dashed;
   --tw-border-opacity: 1;
@@ -913,7 +986,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(172 178 195 / var(--tw-text-opacity));
 }
+@media (max-width: 767px) {
+
+  .link-1 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
 .link-2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-bottom-width: 1px;
   border-style: dashed;
   --tw-border-opacity: 1;
@@ -943,6 +1026,9 @@ video {
   color: rgb(172 178 195 / var(--tw-text-opacity));
 }
 .link-3 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-bottom-width: 1px;
   border-style: dashed;
   --tw-border-opacity: 1;
@@ -972,6 +1058,9 @@ video {
   color: rgb(172 178 195 / var(--tw-text-opacity));
 }
 .link-4 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-bottom-width: 1px;
   border-style: dashed;
   --tw-border-opacity: 1;
@@ -1097,6 +1186,9 @@ video {
   height: 3.125rem;
   width: 3rem;
   padding-left: 0.5rem;
+}
+.btn-password:hover svg {
+  fill: #2956EF;
 }
 .field-search {
   background-image: url('src/img/icons/search.svg');
@@ -1226,8 +1318,50 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(31 141 176 / var(--tw-bg-opacity));
 }
+.header {
+  width: 100%;
+  border-bottom-width: 2px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(243 245 249 / var(--tw-border-opacity));
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+@media (max-width: 767px) {
+
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.invisible {
+  visibility: hidden;
+}
 .relative {
   position: relative;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-\[105px\] {
+  margin-bottom: 105px;
 }
 .mr-8 {
   margin-right: 2rem;
@@ -1235,11 +1369,17 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-\[90px\] {
+  margin-bottom: 90px;
+}
+.mb-\[85px\] {
+  margin-bottom: 85px;
 }
 .flex {
   display: flex;
+}
+.hidden {
+  display: none;
 }
 .h-15 {
   height: 3.75rem;
@@ -1249,6 +1389,12 @@ video {
 }
 .h-8 {
   height: 2rem;
+}
+.min-h-screen {
+  min-height: 100vh;
+}
+.w-full {
+  width: 100%;
 }
 .w-105 {
   width: 26.25rem;
@@ -1261,6 +1407,21 @@ video {
 }
 .w-13 {
   width: 3.125rem;
+}
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+.max-w-xl {
+  max-width: 36rem;
+}
+.max-w-\[1000px\] {
+  max-width: 1000px;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -1276,8 +1437,32 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 245 249 / var(--tw-bg-opacity));
+}
 .p-8 {
   padding: 2rem;
+}
+.px-90 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.pt-\[150px\] {
+  padding-top: 150px;
+}
+.pt-\[140px\] {
+  padding-top: 140px;
+}
+.text-center {
+  text-align: center;
+}
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(237 6 6 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -1298,4 +1483,88 @@ video {
   font-style: normal;
   font-weight: 500;
   font-display: swap;
+}
+
+@media (max-width: 1439px) {
+
+  .laptop\:max-w-\[400px\] {
+    max-width: 400px;
+  }
+
+  .laptop\:justify-center {
+    justify-content: center;
+  }
+
+  .laptop\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .laptop\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .laptop\:pt-20 {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-auto {
+    height: auto;
+  }
+
+  .tablet\:max-w-\[600px\] {
+    max-width: 600px;
+  }
+
+  .tablet\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .mobile\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .mobile\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .mobile\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .mobile\:mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .mobile\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .mobile\:px-\[15px\] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mobile\:pb-20 {
+    padding-bottom: 5rem;
+  }
 }

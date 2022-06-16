@@ -94,6 +94,11 @@ module.exports = {
         900: "#591072",
       },
     },
+    screens: {
+      laptop: { max: "1439px" },
+      tablet: { max: "1023px" },
+      mobile: { max: "767px" },
+    },
     fontFamily: {
       sans: "Rubik, Arial, sans-serif",
     },
@@ -102,6 +107,7 @@ module.exports = {
       spacing: {
         13: "3.125rem",
         15: "3.75rem",
+        90: "90px",
         105: "26.25rem",
       },
 

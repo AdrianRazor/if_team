@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход | If.Team</title>
+    <link rel="stylesheet" href="../compiled.css" />
+  </head>
+  <body>
+    <header class="header hidden tablet:block">
+      <img src="img/logo.svg" alt="webnauts logo" />
+    </header>
+    <main class="flex min-h-screen tablet:h-auto tablet:justify-center">
+      <div
+        class="max-w-[600px] w-full pt-[140px] px-90 pb-90 laptop:max-w-[400px] laptop:py-16 laptop:px-10 tablet:max-w-[600px] mobile:px-[15px] mobile:pb-20"
+      >
+        <h1 class="mb-5 mobile:mb-3">If.Team</h1>
+        <p class="text-1 mb-20 mobile:mb-16">
+          Войдите или
+          <a href="#" class="link-1">зарегистрируйтесь</a>
+        </p>
+        <form action="#" method="post">
+          <div class="mb-7 mobile:mb-5">
+            <div class="flex justify-between">
+              <label for="email" class="label">E-mail</label>
+              <span class="message-invalid invisible">Неверный формат</span>
+            </div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="field"
+              placeholder=" "
+              required
+            />
+          </div>
+          <div class="relative mb-2 mobile:mb-1">
+            <div class="flex justify-between">
+              <label for="password" class="label">Password</label>
+              <a href="#" class="link-2">Забыли пароль?</a>
+            </div>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="field field-password"
+              placeholder=" "
+              required
+            />
+            <button class="btn-password" type="button">
+              <svg width="20" height="16">
+                <use xlink:href="img/sprite.svg#password-show"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="text-3 mb-8 text-red-800 invisible mobile:mb-6">
+            Неверный логин и пароль
+          </p>
+          <button class="btn-primary w-full h-15 mb-10 mobile:mb-7">
+            Войти
+          </button>
+          <p class="text-3 text-center mb-10 mobile:mb-7">
+            или войдите с помощью
+          </p>
+          <button class="btn-secondary w-full h-15">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#google"></use>
+            </svg>
+            Google
+          </button>
+        </form>
+      </div>
+      <div
+        class="w-full flex flex-col items-center pt-[140px] px-90 pb-90 bg-gray-100 laptop:pt-20 laptop:justify-center tablet:hidden"
+      >
+        <img
+          class="max-w-xl w-full mb-[85px]"
+          src="img/logo-big.svg"
+          alt="webnauts logo"
+        />
+        <img class="max-w-[1000px] w-full" src="img/team.svg" alt="team" />
+      </div>
+    </main>
+  </body>
+</html>
